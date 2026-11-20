@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Друг рядом</h1>
+        <h2>собака - друг человека,а человек друг человека</h2>
+        <img src="img/Addestrare un Cane in Casa_ Tecniche Positive e Attività Quotidiane _ Canely.jpg" alt="банер" title="банер с собакой" width="200">
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#cours">Курсы</a>
+            <a href="#time">Расписание</a>
+            <a href="#otz">Отзывы</a>
+            <a href="#zapis">Запись</a>
+            <a href="#cont">Контакты</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <article id="about">
+                <h3>О нашей школе</h3>
+                <p>мы занимаемся тем,что учим ваших собак манерам</p>
+                <p>Информация о компании</p>
+                <ul>
+                    <li>Работаем с собаками любых пород.</li>
+                    <li>Занимаемся воспитанием щенков и взрослых собак.</li>
+                    <li>Используем гуманные методы дрессировки.</li>
+                </ul>
+            </article>
+            <hr>
+            <article id="cours">
+                <h3>Наши курсы</h3>
+                <table border="1">
+                    <caption>актуальный прайслист</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Курс</th>
+                            <th scope="col">Продолжительность</th>
+                            <th scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Воспитание щенка</td>
+                            <td>4 занятия</td>
+                            <td>4 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Базовое послушание</td>
+                            <td>8 занятий</td>
+                            <td>8 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Индивидуальная тренировка</td>
+                            <td>1 занятие</td>
+                            <td>1 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li><strong>Воспитание щенка</strong> - с нуля учим ващего щенка манерам</li>
+                    <li><strong>Базовое послушание</strong> - осмотр врача</li>
+                    <li><strong>Индивидуальная тренировка</strong> - 1.5ч с кинологом</li>
+                </ul>
+            </article>
+            <hr>
+            <article id="time">
+                <h3>time</h3>
+                <table border="1">
+                    <caption>ноябрь-декабрт</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">День</th>
+                            <th scope="col">Время</th>
+                            <th scope="col">Занятие</th>
+                            <th scope="col">Тренер</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Понедельник</td>
+                            <td>10:00</td>
+                            <td>Щенки</td>
+                            <td>Анна</td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>Послушание</td>
+                            <td>Анна</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>12:00</td>
+                            <td>Послушание</td>
+                            <td>Максим</td>
+                        </tr>
+                        <tr>
+                            <td>Суббота</td>
+                            <td>11:00</td>
+                            <td>Щенки</td>
+                            <td>Максим</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <hr>
+            <article id="otz">
+                <h3>Отзывы и частые вопросы</h3>
+                <!-- не понял как отзывы оформить -->
+                 <details>
+                    <summary>три вопроса</summary>
+                    <ul>
+                        <li>Можно ли заниматься со щенком?</li>
+                        <li>Что брать на первую тренировку?</li>
+                        <li>Можно ли оплатить занятия по одному?</li>
+                    </ul>
+                 </details>
+            </article>
+            <hr>
+            <article id="zapis">
+                <h3>Запись на тренировку</h3>
+                <form action="" method="get">
+                    <label for="name">Имя владельца</label>
+                    <input type="text" name="namelid" id="name" minlength="2" maxlength="30" required>
+                    <br>
+                    <label for="em">Электронная почта</label>
+                    <input type="email" id="em" name="email" required>
+                    <br>
+                    <label for="aged">Возраст собаки</label>
+                    <input type="number" name="agedog" id="aged" min="0" max="25">
+                    <br>
+                    <label for="planc">выбор тарифа</label>
+                    <select name="tarif" id="planc" required>
+                        <option value=""></option>
+                        <option value="f">Воспитание щенка</option>
+                        <option value="s">Базовое послушание</option>
+                        <option value="t">Индивидуальная тренировка</option>
+                    </select>
+                    <p>Формат занятия</p>
+                    <input type="radio" name="train" id="solo" value="solot">
+                    <label for="solo">индивидуальное</label>
+                    <br>
+                    <input type="radio" name="train" id="train" value="multit">
+                    <label for="train">групповое</label>
+
+                    <label for="texttt">Дополнительные пожелания</label>
+                    <textarea name="textotz" id="texttt"></textarea>
+                    <br>
+                    <input type="checkbox" name="date" id="dateobr" required>
+                    <label for="dateobr">обработка данных</label>
+                    <button type="submit">отправить</button>
+                    <button type="reset">сбросить</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer id="cont">
+        <address>
+            <ul>
+                <li>Город: Омск.</li>
+                <li><a href="tel:+79000000000">Телефон: +7 (900) 000-00-00</a></li>
+                <li><a href="mailto:hello@example.com">Написать на почту</a></li>
+                <li><a href="telegram.com">наш телеграмм</a></li>
+                <li><details>
+                    <summary>авторские права</summary>
+                    плалвлав
+                    авлалв
+                    авлалвал
+                </details></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+</html>
